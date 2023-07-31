@@ -1,6 +1,3 @@
-// La computadora debe elegir entre tres desiciones: papel, roca y tijera que son strings
-// la funcion de elegir retornara el string de manera aleatoria
-
 function getComputerChoice() {
     const choices = ["Rock", "Paper", "Scissors"];
     const randomIndex = Math.floor(Math.random() * choices.length);
