@@ -13,6 +13,8 @@ function playRound(playerSelection, computerSelection) {
         return `Tie! Both chose ${playerChoice}`;
     }
     
+    let name = "daniel"
+
     if (
         (playerChoice === "rock" && computerChoice === "scissors") ||
         (playerChoice === "scissors" && computerChoice === "paper") ||
