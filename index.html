@@ -12,17 +12,40 @@
 </head>
 <body>
     <main id="container">
-            <div id="player-selection">
+            <section class="menu-img">
                 <img src="./Images/paper.png" alt="Paper">
                 <img src="./Images/rock.png" alt="Rock">
                 <img src="./Images/scissors.png" alt="Scissors">
                 <h1 class="title-game">Rock Paper Scissors!</h1>
-            </div>
-            <div class="star-game">
+            </section>
+
+            <section class="star-game">
                 <h4 class="text-game">Are you ready for the battle?</h4>
-                <button id="button-start">FIGHT!</button>
-            </div>
+                <div class="buttons">
+                    <button id="button-start" class="animation">FIGHT!</button>
+                    <button id="button-restart" class="animation">RESTART</button>
+                </div>
+            </section>
+
+            <section id="gameBoard" class="none">
+                    <div class="player">
+                        <h4>Player</h4>
+                        <p>Score: </p>
+                        <img src="./Images/paper.png" alt="Paper">
+                        <img src="./Images/rock.png" alt="Rock">
+                        <img src="./Images/scissors.png" alt="Scissors">
+                    </div>
+                <h1>VS</h1>
+                    <div class="computer">
+                        <h4>Cpu</h4>
+                        <p>Score: </p>
+                        <img src="./Images/paper.png" alt="Paper">
+                        <img src="./Images/rock.png" alt="Rock">
+                        <img src="./Images/scissors.png" alt="Scissors">
+                    </div>
+            </section>
     </main>
-    <script src="code.js"></script>
+    <script src="./code/interface.js"></script>
+    <script src="./code/code.js"></script>
 </body>
 </html>

@@ -1,16 +1,3 @@
-const playerChoice = document.querySelectorAll('img');
-const startGame = document.getElementById('button-start');
-
-startGame.addEventListener('click', ()=> {
-    console.log("Starting game");
-})
-
-playerChoice.forEach(choice => {
-    choice.addEventListener('click', ()=> {
-        console.log(choice.alt);
-    })
-})
-
 // const buttons = document.querySelectorAll('button');
 // const div = document.querySelector('div');
 // let roundCount = 0;
