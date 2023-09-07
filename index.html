@@ -3,14 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="./Images/favicon.ico" type="image/x-icon">
     <title>Rock Paper Scissors!</title>
 </head>
 <body>
-    <h1>You have 5 rounds to win</h1>
-    <button id="rock">Rock</button>
-    <button id="paper">Paper</button>
-    <button id="scissors">Scissors</button>
-    <div></div>
+    <main id="container">
+            <div id="player-selection">
+                <img src="./Images/paper.png" alt="Paper">
+                <img src="./Images/rock.png" alt="Rock">
+                <img src="./Images/scissors.png" alt="Scissors">
+                <h1 class="title-game">Rock Paper Scissors!</h1>
+            </div>
+            <div class="star-game">
+                <h4 class="text-game">Are you ready for the battle?</h4>
+                <button id="button-start">FIGHT!</button>
+            </div>
+    </main>
     <script src="code.js"></script>
 </body>
 </html>
