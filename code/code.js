@@ -10,7 +10,7 @@ let totalRounds = 0;
 
 playerChoice.forEach(choice => {
     choice.addEventListener('click', ()=> {
-        if (totalRounds === 0) {alert("Submit a round.")}
+        if (totalRounds === 0) {span.textContent = `Submit a Round!`;}
         if (totalRounds > 0) {
             let playerSelection = (choice.alt).toLowerCase();
             let computerSelection = getComputerChoice();
@@ -69,7 +69,7 @@ const displayGame = document.getElementById("gameBoard");
 
 const resetGame = () => {
     displayGame.classList.add('none');
-    alert("Thanks For Play!");
+    alert("Thanks for Playing!");
     setTimeout(() => {
         document.body.addEventListener('click', ()=>{ location.reload()}); 
     }, 2);
