@@ -22,30 +22,31 @@
             <section class="star-game">
                 <h4 class="text-game">Are you ready for the battle?</h4>
                 <div class="buttons">
+                    <button class="button-rounds">Rounds</button>
+                    <input id="input-rounds" type="text" onchange="roundsToPlay(this.value)">
                     <button id="button-start" class="animation">FIGHT!</button>
-                    <button id="button-restart" class="animation">RESTART</button>
                 </div>
             </section>
-
+            <span id="winner">Let's Play!</span>
             <section id="gameBoard" class="none">
                     <div class="player">
                         <h4>Player</h4>
-                        <p>Score: </p>
-                        <img src="./Images/paper.png" alt="Paper">
-                        <img src="./Images/rock.png" alt="Rock">
-                        <img src="./Images/scissors.png" alt="Scissors">
+                        <p id="score">Score: 0</p>
+                        <img id="playerChoice" src="./Images/paper.png" alt="Paper">
+                        <img id="playerChoice" src="./Images/rock.png" alt="Rock">
+                        <img id="playerChoice" src="./Images/scissors.png" alt="Scissors">
                     </div>
                 <h1>VS</h1>
                     <div class="computer">
-                        <h4>Cpu</h4>
-                        <p>Score: </p>
+                        <h4>Computer</h4>
+                        <p id="score">Score: 0</p>
                         <img src="./Images/paper.png" alt="Paper">
                         <img src="./Images/rock.png" alt="Rock">
                         <img src="./Images/scissors.png" alt="Scissors">
                     </div>
             </section>
     </main>
-    <script src="./code/interface.js"></script>
+    <script src="./code/interface.js" type="module"></script>
     <script src="./code/code.js"></script>
 </body>
 </html>
