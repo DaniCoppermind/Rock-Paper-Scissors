@@ -46,8 +46,8 @@ function showScore() {
     const totalScore = document.querySelectorAll('#score');
 
     span.textContent = `Round: ${roundCount + 1}`;
-    totalScore[0].textContent = `Score:${playerScore}`
-    totalScore[1].textContent = `Score:${computerScore}`
+    totalScore[0].textContent = `Score:${playerScore}`;
+    totalScore[1].textContent = `Score:${computerScore}`;
 }
 
 function roundsToPlay(input) {
