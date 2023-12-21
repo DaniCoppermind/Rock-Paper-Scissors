@@ -1,52 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
-    <link rel="shortcut icon" href="./Images/favicon.ico" type="image/x-icon">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" href="./Images/favicon.ico" type="image/x-icon" />
     <title>Rock Paper Scissors!!</title>
-</head>
-<body>
+  </head>
+  <body>
     <main id="container">
-            <section class="menu-img">
-                <img src="./Images/paper.png" alt="Paper">
-                <img src="./Images/rock.png" alt="Rock">
-                <img src="./Images/scissors.png" alt="Scissors">
-                <h1 class="title-game">Rock Paper Scissors!</h1>
-            </section>
+      <section class="menu-img">
+        <img src="./Images/paper.png" alt="Paper" />
+        <img src="./Images/rock.png" alt="Rock" />
+        <img src="./Images/scissors.png" alt="Scissors" />
+        <h1 class="title-game">Rock Paper Scissors!</h1>
+      </section>
 
-            <section class="star-game">
-                <h4 class="text-game">Are you ready for the battle?</h4>
-                <div class="buttons">
-                    <button class="button-rounds">Rounds</button>
-                    <input id="input-rounds" type="text" onchange="roundsToPlay(this.value)">
-                    <button id="button-start" class="animation">FIGHT!</button>
-                </div>
-            </section>
-            <span id="winner">Let's Play!</span>
-            <section id="gameBoard" class="none">
-                    <div class="player">
-                        <h4>Player</h4>
-                        <p id="score">Score: 0</p>
-                        <img id="playerChoice" src="./Images/paper.png" alt="Paper">
-                        <img id="playerChoice" src="./Images/rock.png" alt="Rock">
-                        <img id="playerChoice" src="./Images/scissors.png" alt="Scissors">
-                    </div>
-                <h1>VS</h1>
-                    <div class="computer">
-                        <h4>Computer</h4>
-                        <p id="score">Score: 0</p>
-                        <img src="./Images/paper.png" alt="Paper">
-                        <img src="./Images/rock.png" alt="Rock">
-                        <img src="./Images/scissors.png" alt="Scissors">
-                    </div>
-            </section>
+      <section class="star-game">
+        <h4 class="text-game">Are you ready for the battle?</h4>
+        <div class="buttons">
+          <button class="button-rounds">Rounds</button>
+          <input
+            id="input-rounds"
+            type="text"
+            onchange="roundsToPlay(this.value)"
+          />
+          <button id="button-start" class="animation">FIGHT!</button>
+        </div>
+      </section>
+      <span id="winner">Let's Play!</span>
+      <section id="gameBoard" class="none">
+        <div class="player">
+          <h4>Player</h4>
+          <p id="score">Score: 0</p>
+          <img id="playerChoice" src="./Images/paper.png" alt="Paper" />
+          <img id="playerChoice" src="./Images/rock.png" alt="Rock" />
+          <img id="playerChoice" src="./Images/scissors.png" alt="Scissors" />
+        </div>
+        <h1>VS</h1>
+        <div class="computer">
+          <h4>Computer</h4>
+          <p id="score">Score: 0</p>
+          <img src="./Images/paper.png" alt="Paper" />
+          <img src="./Images/rock.png" alt="Rock" />
+          <img src="./Images/scissors.png" alt="Scissors" />
+        </div>
+      </section>
     </main>
     <script src="./code/interface.js" type="module"></script>
     <script src="./code/code.js"></script>
-</body>
+  </body>
 </html>
